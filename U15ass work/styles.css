@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgb(70, 70, 70);
+    color: #fff;
+}
+
+.container {
+    display:flex;
+    align-items:center;
+}
+
+.image {
+    margin-right:10px;
+}
+
+footer {
+    position:relative;
+    bottom:0;
+    width:100%;
+}
+
+.bg-light{
+    background-color: rgb(70, 70, 70);
+}
