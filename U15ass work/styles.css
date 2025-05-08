@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: rgb(70, 70, 70);
+    background: #58956c;
     color: #fff;
 }
 
@@ -26,5 +26,5 @@ footer {
 }
 
 .bg-light{
-    background-color: rgb(70, 70, 70);
+    background-color: #58956c;
 }
