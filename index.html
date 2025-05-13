@@ -1,173 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Join Hot Beans Web</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Hot Beans Web</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Hot Beans Web</h1>
-      <nav aria-label="Main Navigation">
-        <ul class="nav-menu">
-          <li><a href="companyprofile.html">Company Profile</a></li>
-          <li><a href="traineeprofile.html">Trainee Profiles</a></li>
-          <li><a href="jobspec.html">Job Specifications</a></li>
-          <li><a href="applicationform.html">Apply Now</a></li>
-          <li><a href="courses.html">Courses</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <h1>Welcome to Hot Beans Web</h1>
+        <nav>
+            <ul>
+                <li><a href="companyprofile.html">Company Profile</a></li>
+                <li><a href="traineeprofile.html">Trainee Profiles</a></li>
+                <li><a href="jobspec.html">Job Specifications</a></li>
+                <li><a href="applicationform.html">Apply Now</a></li>
+                <li><a href="courses.html">Web Development Courses</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main class="container">
     <section id="company-profile">
-      <h2>About Us</h2>
-      <p>Hot Beans Web is a leading web development company committed to building innovative, user-friendly digital experiences. We take pride in our collaborative team culture and dedication to continuous learning and growth.</p>
+        <h2>Company Profile</h2>
+        <p>Hot Beans Web is a leading web development company dedicated to creating innovative and user-friendly websites. We pride ourselves on our collaborative culture and commitment to professional growth.</p>
     </section>
 
     <section id="trainee-profiles">
-      <h2>Meet Our Trainees</h2>
-      <article class="trainee">
-        <h3>Jane Doe</h3>
-        <p>Jane is a recent graduate from XYZ University with a strong interest in front-end development. She enjoys designing intuitive and interactive user interfaces.</p>
-      </article>
-      <article class="trainee">
-        <h3>John Smith</h3>
-        <p>With a background in graphic design, John is transitioning into full-stack development. He has a keen eye for detail and a passion for solving complex problems through code.</p>
-      </article>
+        <h2>Trainee Web Developers</h2>
+        <div class="trainee">
+            <h3>Jane Doe</h3>
+            <p>Jane is a recent graduate from XYZ University with a passion for front-end development. She loves creating interactive user experiences.</p>
+        </div>
+        <div class="trainee">
+            <h3>John Smith</h3>
+            <p>John has a background in graphic design and is now focusing on full-stack development. He enjoys solving complex problems with code.</p>
+        </div>
     </section>
 
     <section id="job-specifications">
-      <h2>Job Opportunities</h2>
-      <div class="job">
+        <h2>Job Specifications</h2>
         <h3>Web Developer</h3>
         <ul>
-          <li>Proficient in HTML, CSS, and JavaScript</li>
-          <li>Experience with front-end frameworks (React, Angular, etc.)</li>
-          <li>Understanding of back-end technologies (Node.js, PHP, etc.)</li>
-          <li>Strong analytical and problem-solving skills</li>
-          <li>Effective communicator and collaborative team member</li>
+            <li>Proficient in HTML, CSS, and JavaScript</li>
+            <li>Experience with front-end frameworks (e.g., React, Angular)</li>
+            <li>Understanding of back-end technologies (e.g., Node.js, PHP)</li>
+            <li>Strong problem-solving skills</li>
+            <li>Team player with good communication skills</li>
         </ul>
-      </div>
-      <div class="qualifications">
-        <h3>Required Qualifications</h3>
+        <h3>Qualifications</h3>
         <ul>
-          <li>Bachelor’s degree in Computer Science or a related field</li>
-          <li>Certifications in web development (preferred)</li>
+            <li>Bachelor's degree in Computer Science or related field</li>
+            <li>Relevant certifications in web development</li>
         </ul>
-      </div>
     </section>
 
     <section id="application-form">
-      <h2>Apply Online</h2>
-      <form id="applicationForm" onsubmit="return validateForm()">
-        <div class="form-group">
-          <label for="name">Full Name:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div class="form-group">
-          <label for="resume">Resume URL:</label>
-          <input type="url" id="resume" name="resume" required />
-        </div>
-        <button type="submit">Submit Application</button>
-        <p id="formMessage" role="alert"></p>
-      </form>
+        <h2>Online Application Form</h2>
+        <form id="applicationForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="resume">Resume (URL):</label>
+            <input type="url" id="resume" name="resume" required>
+            <button type="submit">Submit Application</button>
+        </form>
+        <p id="formMessage"></p>
     </section>
 
     <section id="courses">
-      <h2>Recommended Courses</h2>
-      <ul class="course-links">
-        <li><a href="https://www.coursera.org/specializations/web-design" target="_blank" rel="noopener">Web Design for Everybody (Coursera)</a></li>
-        <li><a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011" target="_blank" rel="noopener">Front-End Web Developer Nanodegree (Udacity)</a></li>
-        <li><a href="https://www.codecademy.com/learn/paths/web-development" target="_blank" rel="noopener">Web Development Career Path (Codecademy)</a></li>
-      </ul>
+        <h2>Web Development Courses</h2>
+        <ul>
+            <li><a href="https://www.coursera.org/specializations/web-design" target="_blank">Web Design for Everybody (Coursera)</a></li>
+            <li><a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011" target="_blank">Front-End Web Developer Nanodegree (Udacity)</a></li>
+            <li><a href="https://www.codecademy.com/learn/paths/web-development" target="_blank">Web Development Career Path (Codecademy)</a></li>
+        </ul>
     </section>
-  </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Hot Beans Web. All rights reserved.</p>
-    </div>
-  </footer>
+    <footer>
+        <p>&copy; 2023 Hot Beans Web. All rights reserved.</p>
+    </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-💡 Next Step: CSS Enhancement
-To make this shine, your styles.css should follow modern UI practices. Here’s a quick suggestion:
-
-css
-Copy
-Edit
-body {
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-}
-
-header {
-  background-color: #1a1a1a;
-  color: #fff;
-  padding: 20px 0;
-}
-
-.nav-menu {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-menu li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-section {
-  margin: 40px 0;
-}
-
-form .form-group {
-  margin-bottom: 15px;
-}
-
-input, button {
-  padding: 10px;
-  font-size: 1rem;
-  width: 100%;
-  max-width: 500px;
-  margin-top: 5px;
-}
-
-button {
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #222;
-  color: white;
-  margin-top: 40px;
-}
