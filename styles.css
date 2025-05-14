@@ -1,40 +1,144 @@
-body {
-    font-family: Arial, sans-serif;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Modern Styled Page</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+  /* Reset and base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-}
+    background: #f5f9f7;
+    color: #2f3e35;
+  }
 
-header {
-    background: #58956c;
-    color: #fff;
-}
+  /* Header styles */
+  header {
+    background: #4a7c57;
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
 
-.container {
-    display:flex;
-    align-items:center;
-}
-.menu ul{
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .menu ul {
     display: inline-flex;
-    margin: 50px;
-}
-.menu ul li{
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu ul li {
     list-style: none;
-    margin: 0 20px;
-    color: #b2b1b1;
+    margin: 0 1.5rem;
+    color: #cad6cc;
     cursor: pointer;
-}
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  .menu ul li:hover {
+    color: #a0c49d;
+  }
+  .menu ul li::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background: #a0c49d;
+    left: 50%;
+    bottom: -6px;
+    transition: 0.3s ease;
+    transform: translateX(-50%);
+  }
+  .menu ul li:hover::after {
+    width: 70%;
+  }
 
-.image {
-    margin-right:10px;
-}
+  .image {
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 2px solid #cad6cc;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+  }
 
-footer {
-    position:relative;
-    bottom:0;
-    width:100%;
-}
+  /* Footer styling */
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #4a7c57;
+    color: #e1e8e3;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    box-shadow: 0 -3px 6px rgba(0,0,0,0.1);
+  }
 
-.bg-light{
-    background-color: #58956c;
-}
+  .bg-light {
+    background-color: #a6cfa2;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .menu ul {
+      flex-direction: column;
+    }
+    .menu ul li {
+      margin: 0.5rem 0;
+    }
+    .image {
+      margin: 0 0 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" alt="Profile" class="image" />
+    <nav class="menu">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container" style="padding: 2rem;">
+  <section>
+    <h1>Welcome to the Modern Styled Page</h1>
+    <p>This page demonstrates a clean, fresh, and stylish look with smooth hover effects and a neat layout.</p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2024 Your Company. All rights reserved.
+</footer>
+</body>
+</html>
+
+```
